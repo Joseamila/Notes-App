@@ -38,8 +38,8 @@ export default class NoteList extends Component {
                                         </Link>
                                 </div>
                                 <div className="card-body">
-                                    <p> {note.content} </p>
-                                    <p> {note.author} </p>
+                                    <p> <strong>By:</strong> {note.author}</p>
+                                    <p> <strong>Content:</strong> {note.content}</p>
                                     <p> {format(note.date)} </p>
                                 </div>
                                 <div className="card-footer">
