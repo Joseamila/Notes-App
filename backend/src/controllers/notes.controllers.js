@@ -22,7 +22,7 @@ const Note = require('../models/note')
 
     noteCtrl.updateNote = async (req, res) => {
         const {title, content, author } = req.body;
-        await Note.findOneAndUpdate(req.params.id, { title, content, author})
+        await Note.findOneByIdAndUpdate(req.params.id, { title, content, author})
         res.json({Message: 'Note saved'})
     }
     
